@@ -28,7 +28,7 @@ nnoremap <leader>q <cmd>CHADopen<cr>
 nnoremap <c-p> :Files<cr>
 
 call plug#begin()
-Plug 'ayu-theme/ayu-vim'
+Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -44,5 +44,6 @@ call plug#end()
 
 
 set termguicolors 
-let ayucolor="dark"
-colorscheme ayu
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+set background=dark
