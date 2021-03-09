@@ -22,10 +22,11 @@ nnoremap <C-f> :NERDTreeFind<CR>
 let mapleader="\<space>"
 nnoremap <leader>; A;<esc>
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
+nnoremap <leader>s :vsplit<cr>
+nnoremap <leader>t :split | terminal<cr>
 nnoremap <silent> <C-z> :ToggleTerminal<Enter>
 tnoremap <silent> <C-z> <C-\><C-n>:ToggleTerminal<Enter>
 
-nnoremap <leader>q <cmd>CHADopen<cr>
 nnoremap <c-p> :Files<cr>
 
 call plug#begin()
