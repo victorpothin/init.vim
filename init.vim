@@ -6,6 +6,7 @@ set inccommand=split
 set splitbelow
 set splitright
 set completeopt=noinsert,menuone,noselect
+set clipboard+=unnamedplus
 
 autocmd BufEnter * call ncm2#enable_for_buffer()
 autocmd VimEnter * NERDTree | wincmd p
