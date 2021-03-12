@@ -5,10 +5,8 @@ set mouse=a
 set inccommand=split
 set splitbelow
 set splitright
-set completeopt=noinsert,menuone,noselect
 set clipboard+=unnamedplus
 
-autocmd BufEnter * call ncm2#enable_for_buffer()
 autocmd VimEnter * NERDTree | wincmd p
 
 nnoremap <C-J> <C-W><C-J>
@@ -31,17 +29,13 @@ nnoremap <c-p> :Files<cr>
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
-Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
 Plug 'jiangmiao/auto-pairs'
 Plug 'caenrique/nvim-toggle-terminal'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'valloric/youcompleteme'
 call plug#end()
 
 
