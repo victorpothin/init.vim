@@ -6,6 +6,7 @@ set inccommand=split
 set splitbelow
 set splitright
 set clipboard+=unnamedplus
+set encoding=UTF-8
 
 autocmd VimEnter * NERDTree | wincmd p
 
@@ -29,13 +30,14 @@ nnoremap <c-p> :Files<cr>
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'caenrique/nvim-toggle-terminal'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
-Plug 'valloric/youcompleteme'
 call plug#end()
 
 
@@ -43,3 +45,5 @@ set termguicolors
 colorscheme gruvbox
 let g:airline_theme='gruvbox'
 set background=dark
+
+
