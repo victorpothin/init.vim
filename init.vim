@@ -25,7 +25,7 @@ nnoremap <leader>vs :vsplit<Enter>
 nnoremap <leader>s :split<Enter>
 nnoremap <silent> <C-z> :ToggleTerminal<Enter>
 tnoremap <silent> <C-z> <C-\><C-n>:ToggleTerminal<Enter>
-
+inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 nnoremap <c-p> :Files<cr>
 
 call plug#begin()
